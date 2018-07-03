@@ -1,0 +1,14 @@
+<h1>Keep up with the News and add your own notes!</h1>
+<div class="container">
+    <div class= "row">
+        <div class ="col-md-1"></div>
+        <div class="col-md-10">
+{{#each articles}}
+<h3> Title: {{title}} </h3>
+<p><a href="{{link}}" target="_blank"><em>Read More</em></a></p>
+{{!-- <a> Link: {{link}} </a> --}}
+{{/each}}
+    </div>
+   <div class ="col-md-1"></div>  
+</div>
+</div>
