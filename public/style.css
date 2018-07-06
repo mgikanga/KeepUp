@@ -6,3 +6,17 @@ text-align: center;
 color: orangered;
 font-family: cursive;
 }
+.jumbotron{
+   margin:1%;
+  padding: 20%;
+background-image: url("https://images2.alphacoders.com/480/thumb-1920-480530.png");
+}
+/* .col-md-3{
+    background-color: bisque;
+}*/
+.col-md-9{
+    background-color: brown;
+} 
+.row{
+    background-color: blue;
+}

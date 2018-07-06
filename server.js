@@ -39,7 +39,9 @@ mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
 // Routes
-
+app.get("/", function(req, res){
+    res.render("index")
+})
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request

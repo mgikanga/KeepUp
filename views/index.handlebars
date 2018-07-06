@@ -1,14 +1,18 @@
-<h1>Keep up with the News and add your own notes!</h1>
-<div class="container">
-    <div class= "row">
-        <div class ="col-md-1"></div>
-        <div class="col-md-10">
-{{#each articles}}
+
+
+        {{!-- <div class ="col-md-1"></div> --}}
+        
+        <div class="container">
+             {{#each articles}}  
+    <div class= "row">       
+               <div class="col-md-9">  
 <h3> Title: {{title}} </h3>
-<p><a href="{{link}}" target="_blank"><em>Read More</em></a></p>
+<button><a href="{{link}}" target="_blank"><em>Read More</em></a></button>
+<button  data-id='{{_id}}' class ="noty"><em>comment</em></button>
 {{!-- <a> Link: {{link}} </a> --}}
-{{/each}}
-    </div>
-   <div class ="col-md-1"></div>  
+</div>  
+<div id="notes" class="col-md-3" ></div>    
 </div>
+  {{/each}} 
+  <hr>
 </div>
